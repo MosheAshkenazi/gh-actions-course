@@ -13,6 +13,12 @@ jobs:
             uses: actions/checkout@v4
           - name: printing folders
             run: ls -la
+          - name: setup node
+            uses: actions/setup-node@v3
+            with:
+              node-version: '24.x'
+          - name: install dependencies
+            run: npm ci
 
         # 1. Install deps on our react application
 
