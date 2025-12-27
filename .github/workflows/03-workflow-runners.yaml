@@ -8,5 +8,6 @@ jobs:
         steps:
             - name: Show OS
               run: |
+                echo "This job is running on:"
                 uname -a
                 echo "The runner OS is $RUNNER_OS"
