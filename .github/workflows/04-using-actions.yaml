@@ -19,6 +19,7 @@ jobs:
               node-version: '24.x'
           - name: install dependencies
             run: npm ci
+            working-directory: 04-using-actions/react-app
 
         # 1. Install deps on our react application
 
