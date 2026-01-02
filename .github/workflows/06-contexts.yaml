@@ -42,5 +42,12 @@ jobs:
         run: |
           echo "My workflow env": ${{ env.MY_WORKFLOW_VAR }}
           echo "Overwritten": ${{ env.MY_OVERWRITTEN_VAR }}
+  echo-data2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env variables by env var name and not by github env context
+        run: |
+          echo "workflow env": $MY_WORKFLOW_VAR
+          echo "Overwritten env": $MY_OVERWRITTEN_VAR"
       
 
